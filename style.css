@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    margin: auto;
+}
+
+.main-container {
+    width: 550px;
+    padding: 40px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px 10px 140px 10px;
+    box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.33);
+}
+
+.inputs-container {
+    display: flex;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.input-item label {
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 0.15rem;
+    font-size: 0.65rem;
+    margin-bottom: 5px;
+}
+
+.input-item input {
+    width: 100px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-item .error-msg {
+    margin-top: 5px;
+    color: hsl(0, 100%, 67%);
+    font-size: 0.6rem;
+    font-style: italic;
+}
+
+.button-container {
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.button-container hr {
+    border: none;
+    flex-grow: 1;
+    border: 1px solid hsl(0, 0%, 94%);
+}
+
+.arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(259, 100%, 65%);
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+}
+
+.arrow-button:hover {
+    background-color: hsl(259, 100%, 55%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.arrow-button img {
+    width: 34px;
+}
+
+.result-container h1 {
+    color: hsl(0, 0%, 8%);
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 4rem;
+}
+
+.result-container .result-color {
+    color: hsl(259, 100%, 65%);
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        width: 330px;
+        padding: 40px 25px;
+        margin: 20px 10px 40px 10px;
+    }
+
+    .inputs-container {
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+
+    .input-item {
+        margin-right: 0;
+    }
+
+    .input-item input {
+        width: 82px;
+        font-size: 1rem;
+    }
+
+    .button-container {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .arrow-button {
+        position: absolute;
+        margin: auto;
+        width: 56px;
+        height: 56px;
+    }
+
+    .arrow-button img {
+        width: 28px;
+    }
+
+    .result-container h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        font-style: italic;
+        line-height: 4rem;
+    }
+}

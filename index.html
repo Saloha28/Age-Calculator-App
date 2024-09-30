@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet" />
+
+  <title>salah elnahy| Age Calculator App</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      font-family: sans-serif;
+      margin-bottom: 5px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="main-container">
+      <section class="inputs-container">
+        <div class="input-item" id="day-input-item">
+          <label for="day" id="day-label">DAY</label>
+          <input type="text" id="day" name="day" placeholder="DD" />
+          <span class="error-msg day-error date-error"></span>
+        </div>
+
+        <div class="input-item" id="month-input-item">
+          <label for="month" id="month-label">MONTH</label>
+          <input type="text" id="month" name="month" placeholder="MM" />
+          <span class="error-msg month-error"></span>
+        </div>
+
+        <div class="input-item" id="year-input-item">
+          <label for="year" id="year-label">YEAR</label>
+          <input type="text" id="year" name="year" placeholder="YYYY" />
+          <span class="error-msg year-error"></span>
+        </div>
+      </section>
+
+      <section class="button-container">
+        <hr/>
+        <div class="arrow-button">
+          <img src="./assets/images/icon-arrow.svg" alt="arrow button image" />
+        </div>
+      </section>
+
+      <section class="result-container">
+        <h1>
+          <span class="result-color year-result">- -</span> year<span id="day-plural">s</span>
+        </h1>
+        <h1>
+          <span class="result-color month-result">- -</span> month<span id="month-plural">s</span>
+        </h1>
+        <h1>
+          <span class="result-color day-result">- -</span> day<span id="year-plural">s</span>
+        </h1>
+      </section>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
